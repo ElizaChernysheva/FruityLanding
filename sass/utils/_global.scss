@@ -1,0 +1,75 @@
+body {
+    font-family: $textFont,
+    '-apple-system', 'BlinkMacSystemFont',
+    'avenir next', 'avenir', 'segoe ui', 'helvetica neue', 
+    'helvetica', 'Ubuntu', 'noto', 'arial', sans-serif;
+    font-size: 18px;
+    color: $mainTextColor;
+    line-height: 1.7;
+
+    @media (max-width: 1024px) {
+        font-size: 16px;
+    }
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+.section {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.btn {
+    font-family: $textFont;
+    padding: 27px 41px;
+
+    border: none;
+    cursor: pointer;
+}
+
+.title {
+    font-family: $headingFont;
+    font-size: 70px;
+    line-height: 1;
+    color: $mainTitleColor;
+
+    @media (max-width:1024px){
+        font-size: 65px;
+    }
+
+    @media (max-width:768px) {
+        font-size: 50px;
+    }
+
+    @media (max-width:480px) {
+        font-size: 40px;
+    }
+}

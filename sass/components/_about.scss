@@ -1,0 +1,109 @@
+.about {
+    padding-top: 112px;
+    padding-bottom: 100px;
+
+    background-image: url('/img/Ellipse.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 680px;
+
+    @media (max-width:1200px){
+        background-size: 550px;
+    }
+
+    @media (max-width:1024px){
+        padding-top: 100px;
+        padding-bottom: 88px;
+
+        background-position: center bottom;
+        background-size: 680px;
+    }
+
+    @media (max-width:768px){
+        padding-top: 60px;
+        padding-bottom: 48px;
+
+        background-size: 550px;
+        
+    }
+
+    @media (max-width:480px){
+        background-size: 500px;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+
+        width: 1346px;
+        column-gap: 126px;
+        
+        @media (max-width:1200px){
+            width: 1024px;
+            column-gap: 100px;
+        }
+
+        @media (max-width:1024px){
+            width: 768px;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        @media (max-width:768px){
+            max-width: 480px;
+            width: 100%;
+        }
+    }
+    
+}
+
+    
+
+.about__wrapper {
+    max-width: 500px;
+
+    @media (max-width: 1024px){
+        margin-bottom: 50px;
+
+        text-align: center;
+    }
+}
+
+.about__img {
+    width: 695px;
+
+    @media (max-width:1024px){
+        width: 570px;
+    }
+}
+
+.about__title {
+    margin-bottom: 60px;
+
+    @media (max-width: 1024px){
+        margin-bottom: 50px;
+    }
+}
+
+.about__info {
+    color: #5F6672;
+    margin-bottom: 50px;
+}
+
+.about__btn {
+    padding: 25px 35px;
+
+    color: $primaryWhiteColor;
+
+    background-color: $accentColor;
+    border-radius: 30px;
+    border: none;
+    transition: background-color $animation;
+
+    &:hover,
+    &:focus {
+        background-color: $secondaryAccentColor;
+    }
+}

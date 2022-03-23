@@ -1,0 +1,147 @@
+.header {
+    position: absolute;
+    top: 46px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1230px;
+    width: 100%;
+    // display: none;
+
+    .container {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo {
+        margin-right: 337px;
+        font-family: $headingFont;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 1.17;
+        color: $mainTitleColor;
+
+        span {
+            color: $secondaryAccentColor;
+        }
+
+        @media (max-width:1200px) {
+            margin-right: 150px;
+        }
+    }
+
+
+}
+
+.nav {
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.nav__list,
+.search {
+    display: flex;
+    align-items: center;
+    align-items: center;
+
+}
+
+
+.nav__item {
+    transition: transform $animation;
+
+    &:not(:last-child) {
+        margin-right: 46px;
+    }
+
+    &:hover,
+    &:focus {
+        transform: scale(1.2);
+    }
+}
+
+.nav__link,
+.search__link {
+    font-weight: 500;
+    line-height: 1.17;
+    
+}
+
+.nav__link {
+    color: inherit;
+}
+
+.search {
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.search__link {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: $secondaryAccentColor;
+    
+    background-color: $primaryWhiteColor;
+    transition: background-color $animation, color $animation;
+
+    
+    &:hover,
+    &:focus {
+        background-color: $secondaryAccentColor;
+        color: $primaryWhiteColor;
+    }
+
+    &--big {
+        min-width: 146px;
+        max-width: 200px;
+        padding: 15px 23px;
+
+        border-radius: 22.5px;
+    }
+
+    &--little {
+        padding: 15px;
+
+        border-radius: 15px;
+    }
+
+
+}
+
+.search__svg {
+    stroke: $secondaryAccentColor;
+    fill: $secondaryAccentColor;
+
+    .search__link:hover &,
+    .search__link:focus & {
+        stroke: $primaryWhiteColor;
+    }
+
+    .search__link--filled:hover &,
+    .search__link--filled:focus & {
+        fill: $primaryWhiteColor;
+    }
+}
+
+
+.search {
+    margin-left: auto;
+}
+
+.search__item:not(:last-child) {
+    margin-right: 13px;
+}
+
+.burger-menu {
+    display: none;
+
+    @media (max-width: 768px) {
+        display: block;
+
+        margin-left: auto;
+    }
+}

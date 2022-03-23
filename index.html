@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruity</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a class="logo" href="/">
+                Fru<span>i</span>ty
+            </a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link" href="">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="">Categories</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="">About Us</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="search">
+                <li class="search__item">
+                    <a class="search__link search__link--big" href="">Contact Us</a>
+                </li>
+                <li class="search__item">
+                    <a class="search__link search__link--little" href="">
+                        <svg class="search__svg" width="20" height="20">
+                            <use href="./img/icons.svg#icon-cart"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="search__item">
+                    <a class="search__link search__link--little search__link--filled" href="">
+                        <svg class="search__svg" width="20" height="20">
+                            <use href="./img/icons.svg#icon-search"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <svg class="burger-menu" width="32" height="17">
+                <use href="./img/icons.svg#icon-burger"></use>
+            </svg>
+        </div>
+    </header>
+    <main>
+        <!-- intro -->
+        <section class="intro section">
+            <div class="container">
+                <h1 class="intro__title">
+                    <span>Organic</span> Healthy Fresh Food For You<span>.</span>
+                </h1>
+                <p class="intro__info">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+                </p>
+                <button class="btn intro__btn" type="button">
+                    <span>Order Now</span>
+                    <svg class="intro__svg" width="20" height="13">
+                        <use href="./img/icons.svg#icon-arrow"></use>
+                    </svg>
+                </button>
+            </div>
+        </section>
+        <!--featured products-->
+        <section class="section features">
+            <div class="container">
+                <h2 class="title features__title">Featured Product</h2>
+                <ul class="features__list">
+                    <li class="features__item">
+                        <div class="features__figure features__figure--yellow">
+                            <img src="./img/banana.png" alt="banana" width="192">
+                        </div>
+                        <div class="features__desc">
+                            <span>Ripe Yellow Banana</span>
+                            <span>$2.89</span>
+                        </div>
+                        <div class="features__actions">
+                            <span class="features__weight">500g</span>
+                            <button type="button" class="features__btn">Buy</button>
+                        </div>
+                    </li>
+                    <li class="features__item">
+                        <div class="features__figure features__figure--pink">
+                            <img src="./img/pomegranate.png" alt="pomegranate" width="192">
+                        </div>
+                        <div class="features__desc">
+                            <span>Red Pomegranate</span>
+                            <span>$3.89</span>
+                        </div>
+                        <div class="features__actions">
+                            <span class="features__weight">500g</span>
+                            <button type="button" class="features__btn">Buy</button>
+                        </div>
+                    </li>
+                    <li class="features__item">
+                        <div class="features__figure features__figure--orange">
+                            <img src="./img/orange.png" alt="banana" width="192">
+                        </div>
+                        <div class="features__desc">
+                            <span>Sweet Orange</span>
+                            <span>$2.89</span>
+                        </div>
+                        <div class="features__actions">
+                            <span class="features__weight">500g</span>
+                            <button type="button" class="features__btn">Buy</button>
+                        </div>
+                    </li>
+                    <li class="features__item">
+                        <div class="features__figure features__figure--blue">
+                            <img src="./img/watermelon.png" alt="watermelon" width="192">
+                        </div>
+                        <div class="features__desc">
+                            <span>Tasty Watemelon</span>
+                            <span>$4.89</span>
+                        </div>
+                        <div class="features__actions">
+                            <span class="features__weight">500g</span>
+                            <button type="button" class="features__btn">Buy</button>
+                        </div>
+                    </li>
+                    
+                    <li class="features__item">
+                        <div class="features__figure features__figure--green">
+                            <img src="./img/pomegranate.png" alt="pomegranate" width="192">
+                        </div>
+                        <div class="features__desc">
+                            <span>Red Pomegranate</span>
+                            <span>$3.89</span>
+                        </div>
+                        <div class="features__actions">
+                            <span class="features__weight">500g</span>
+                            <button type="button" class="features__btn">Buy</button>
+                        </div>
+                    </li>
+                    <li class="features__item">
+                        <div class="features__figure features__figure--red">
+                            <img src="./img/banana.png" alt="banana" width="192">
+                        </div>
+                        <div class="features__desc">
+                            <span>Ripe Yellow Banana</span>
+                            <span>$2.89</span>
+                        </div>
+                        <div class="features__actions">
+                            <span class="features__weight">500g</span>
+                            <button type="button" class="features__btn">Buy</button>
+                        </div>
+                    </li>
+                    <li class="features__item">
+                        <div class="features__figure features__figure--blue">
+                            <img src="./img/watermelon.png" alt="watermelon" width="192">
+                        </div>
+                        <div class="features__desc">
+                            <span>Tasty Watemelon</span>
+                            <span>$4.89</span>
+                        </div>
+                        <div class="features__actions">
+                            <span class="features__weight">500g</span>
+                            <button type="button" class="features__btn">Buy</button>
+                        </div>
+                    </li>
+                    <li class="features__item">
+                        <div class="features__figure features__figure--red">
+                            <img src="./img/orange.png" alt="banana" width="192">
+                        </div>
+                        <div class="features__desc">
+                            <span>Sweet Orange</span>
+                            <span>$2.89</span>
+                        </div>
+                        <div class="features__actions">
+                            <span class="features__weight">500g</span>
+                            <button type="button" class="features__btn">Buy</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--how it works-->
+        <section class="section works">
+            <div class="container">
+                <ul class="works-img__list">
+                    <li class="works-img__item">
+                        <img src="./img/howItWorks1.png" alt="woman" width="270">
+                    </li>
+                    <li class="works-img__item">
+                        <img src="./img/howItWorks2.png" alt="vegetables" width="235">
+                    </li>
+                    <li class="works-img__item">
+                        <img src="./img/howItWorks3.png" alt="man" width="270">
+                    </li>
+                    <li class="works-img__item">
+                        <img src="./img/howItWorks4.png" alt="oranges" width="235">
+                    </li>
+                </ul>
+                <div class="works__wrapper">
+                    <h2 class="title works__title">How it Works</h2>
+                    <p class="works__info">Lorem Ipsum is simply dummy text of the printi and typesetting industry. Lorem Ipsum has been the industry's </p>
+                    <ul class="works__list">
+                        <li class="works__item">
+                            <div class="works__img works__img--violet">
+                                <svg width="22" height="22">
+                                    <use href="./img/icons.svg#icon-cart1"></use>
+                                </svg>
+                            </div>
+                            <div class="works__steps">
+                                <h3 class="works__subtitle">Choose Product</h3>
+                                <p class="works__desc">Lorem Ipsum is simply dummy text of the printi</p>
+                            </div>
+
+                        </li>
+                        <li class="works__item">
+                            <div class="works__img works__img--green">
+                                <svg width="22" height="22">
+                                    <use href="./img/icons.svg#icon-payment"></use>
+                                </svg>
+                            </div>
+                            <div class="works__steps">
+                                <h3 class="works__subtitle">Do Payment</h3>
+                                <p class="works__desc">Lorem Ipsum is simply dummy text of the printi</p>
+                            </div>
+
+                        </li>
+                        <li class="works__item">
+                            <div class="works__img works__img--orange">
+                                <svg width="22" height="22">
+                                    <use href="./img/icons.svg#icon-smartphone"></use>
+                                </svg>
+                            </div>
+                            <div class="works__steps">
+                                <h3 class="works__subtitle">Confirmation Payment</h3>
+                                <p class="works__desc">Lorem Ipsum is simply dummy text of the printi</p>
+                            </div>
+
+                        </li>
+                        <li class="works__item">
+                            <div class="works__img works__img--yellow">
+                                <svg width="22" height="22">
+                                    <use href="./img/icons.svg#icon-shipped"></use>
+                                </svg>
+                            </div>
+                            <div class="works__steps">
+                                <h3 class="works__subtitle">Order Shipped</h3>
+                                <p class="works__desc">Lorem Ipsum is simply dummy text of the printi</p>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--about us-->
+        <section class="section about">
+            <div class="container">
+                <div class="about__wrapper">
+                    <h2 class="title about__title">About Us</h2>
+                    <p class="about__info">
+                        There are many variations of passages of Lorem Ipsum available, 
+                        but the majority have suffered alteration. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+                    </p>
+                    <button type="button" class="btn about__btn">Read More</button>
+                </div>
+                <div class="about__img">
+                    <img src="./img/about_us.png" alt="fruits" width="695">
+                </div>
+            </div>
+        </section>
+        <!--review-->
+        <section class="section review">
+            <h2 class="title review__title">Customer Review</h2>
+            <div class="review__wrapper">
+                <ul class="review__list">
+                    <li class="review__item">
+                        <p class="review__info">
+                            We help our clients make realize thier most important businessWe help our clients make realize thier  We help our clients make realize thier most important businessWe help our clients make realize.
+                        </p>
+                        <div class="review__customer">
+                            <div class="review__picture">
+                                <img src="./img/man.png" alt="man">
+                            </div>
+                            <div>
+                                <h3 class="review__name">Kevin Andrew</h3>
+                                <p class="review__text">
+                                    Happy Customers
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="review__item">
+                        <p class="review__info">
+                            We help our clients make realize thier most important businessWe help our clients make realize thier  We help our clients make realize thier most important businessWe help our clients make realize.
+                        </p>
+                        <div class="review__customer">
+                            <div class="review__picture">
+                                <img src="./img/man.png" alt="man">
+                            </div>
+                            <div>
+                                <h3 class="review__name">Kevin Andrew</h3>
+                                <p class="review__text">
+                                    Happy Customers
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="review__item">
+                        <p class="review__info">
+                            We help our clients make realize thier most important businessWe help our clients make realize thier  We help our clients make realize thier most important businessWe help our clients make realize.
+                        </p>
+                        <div class="review__customer">
+                            <div class="review__picture">
+                                <img src="./img/man.png" alt="man">
+                            </div>
+                            <div>
+                                <h3 class="review__name">Kevin Andrew</h3>
+                                <p class="review__text">
+                                    Happy Customers
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <button type="button" class="review__btn review__btn--left">
+                        <svg class="review__svg" width="34" height="34"> 
+                            <use href="./img/icons.svg#icon-left_arrow"></use>
+                        </svg>
+                    </button>
+                    <button type="button" class="review__btn review__btn--right">
+                        <svg class="review__svg" class="review__svg" width="34" height="34">
+                            <use href="./img/icons.svg#icon-right_arrow"></use>
+                        </svg>
+                    </button>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="section footer">
+        <div class="container">
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a class="logo" href="/">
+                        Fruity
+                    </a>
+                    <p class="footer__info">
+                        Lorem Ipsum is simply dummy typesetting industry. Lorem Ipsum has been the industry's standard.
+                    </p>
+                    <ul class="socials">
+                        <li class="social__item">
+                            <a href="" class="socail__link">
+                                <svg class="socail__svg" width="15" height="15">
+                                    <use href="./img/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="" class="socail__link">
+                                <svg class="socail__svg" width="15" height="14">
+                                    <use href="./img/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="" class="socail__link">
+                                <svg class="socail__svg" width="15" height="16">
+                                    <use href="./img/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="" class="socail__link">
+                                <svg class="socail__svg" width="20" height="14">
+                                    <use href="./img/icons.svg#icon-youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer__item">
+                    <h3 class="footer__heading">Community</h3>
+                    <ul>
+                        <li class="footer__element">
+                            <a class="footer__link" href="">For Agents</a>
+                        </li>
+                        <li class="footer__element">
+                            <a class="footer__link" href="">For Seller</a>
+                        </li>
+                        <li class="footer__element">
+                            <a class="footer__link" href="">For Buyer</a>
+                        </li>
+                        <li class="footer__element">
+                            <a class="footer__link" href="">Search home</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer__item">
+                    <h3 class="footer__heading">About</h3>
+                    <ul>
+                        <li class="footer__element">
+                            <a class="footer__link" href="">Our Story</a>
+                        </li>
+                        <li class="footer__element">
+                            <a class="footer__link" href="">Careers</a>
+                        </li>
+                        <li class="footer__element">
+                            <a class="footer__link" href="">Meet the Team</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer__item">
+                    <h3 class="footer__heading">Contact</h3>
+                    <address class="footer__adress">
+                        <ul>
+                            <li class="footer__element">
+                                <a class="footer__link" href="">29/A Berden Street</a>
+                            </li>
+                            <li class="footer__element">
+                                <a class="footer__link" href="">Simply random text</a>
+                            </li>
+                            <li class="footer__element">
+                                <a class="footer__link" href="">It has roots in a piece of classical latin from 45</a>
+                            </li>
+                        </ul>
+                    </address>
+                </li>
+            </ul>
+            <p class="footer__copyright">
+                &copy; 2021 Real State All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
