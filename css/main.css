@@ -234,7 +234,7 @@ a {
 .intro {
   padding-top: 320px;
   padding-bottom: 204px;
-  background-image: url(/img/intro_bg.jpg);
+  background-image: url(../img/intro_bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
